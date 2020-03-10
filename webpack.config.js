@@ -73,18 +73,6 @@ module.exports = {
     publicPath: '/',
     path: path.join(__dirname, "build"),
   },
-  devServer: {
-    port: 3000,
-    overlay: {
-      warnings: true,
-      errors: true
-    },
-    historyApiFallback: {
-      index: '/index.html'
-    },
-    contentBase: path.join(__dirname, "public"),
-    hot: true
-  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
